@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/js/esri/css/esri.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+      var dojoConfig = { 
+        packages: [{
+          name: "extras",
+          location: location.pathname.replace(/\/[^/]+$/, "") + "/extras"
+        }]
+      };
+    </script>
+    <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.3/"></script>
+    <script src="main.js"></script>
+  </head>
+  
+  <body>
+
+    <div id="loading" class="shadow loading">
+      Getting Latest Gas Price Data...
+      <img src="http://dl.dropbox.com/u/2654618/loading_gray_circle.gif">
+    </div>
+
+
+    <div id="map">
+      <div id="title" class="shadow info">Current Gas Prices by State</div>
+      <div id="legend" class="shadow info"></div>
+    </div>
+
+    <div class="shadow meta">
+      <script src="https://gist.github.com/4512807.js"></script>
+
+      <div class="credits">
+        Derek Swingley, Esri
+        <br>
+        <a href="">@derekswingley</a>
+        <br>
+        ArcGIS API for JavaScript | <a href="http://esriurl.com/js">esriurl.com/js</a>
+      </div>
+    </div>
+
+  </body>
+</html>
