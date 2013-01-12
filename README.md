@@ -13,4 +13,4 @@ Sidenote:  to generate an extent in any [spatial](http://help.arcgis.com/en/weba
 
 Features are symbolized by average gas price. This data is published daily by AAA. Once the app has retrieved data from AAA, rather than joining it to the features, the feature layer's renderer looks up the gas price for each state according to the state name. The details behind this are that instead of giving a renderer an attribute name to symbolize features, a function is given to the renderer. This function runs once for each feature in the layer and returns a value that is then used to symbolize a feature. For this app, the function looks up a the average state gas price from the AAA data and returns it. This is a simple example but it shows that anything you can do in a function, you can now do to calculate a value to symbolize features on a map.
 
-This app was presented at [JS.geo 2013](http://geojs.eventbrite.com/) as a lightning talk.
+This app was presented at [JS.geo 2013](http://mapbrief.com/2012/11/21/js-geo-2013-a-meeting-of-javascript-mappers-in-denver/) as a lightning talk.
