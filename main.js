@@ -35,10 +35,10 @@ require([
     var updateEnd = conn.connect(fl, "onUpdateEnd", function() {
       // get gas price data
       // using apify:  http://apify.heroku.com/resources
-      // edit the apify thing:  http://apify.heroku.com/resources/506f19ea8b5ff50002000004/edit
+      // edit the apify thing:  http://apify.heroku.com/resources/53b34e28d804760002000023/edit
       conn.disconnect(updateEnd);
       var prices = esri.request({
-        url: "http://apify.heroku.com/api/gasprices.json",
+        url: "http://apify.heroku.com/api/aaagasprices.json",
         callbackParamName: "callback"
       });
       prices.then(drawFeatureLayer, pricesError);
